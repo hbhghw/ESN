@@ -87,7 +87,7 @@ for i,w1 in enumerate(weights):
         dissimilarity_matrix[j,i] = dissimilarity_matrix[i,j]
 # dmax = np.max(dissimilarity_matrix)
 # dissimilarity_matrix = dissimilarity_matrix / dmax
-print(dissimilarity_matrix)
+
 from sklearn.manifold import MDS
 from mpl_toolkits import mplot3d
 mds = MDS(n_components=3,dissimilarity='precomputed')
